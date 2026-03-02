@@ -13,7 +13,8 @@ body{
   background:var(--bg);
   color:var(--fg);
   font-family:"Courier New", monospace;
-  line-height:1.65;
+  font-size:17px;        
+  line-height:1.7;       
 }
 
 .container{
@@ -29,8 +30,8 @@ body{
 }
 
 .brand .h1{
-  font-size:28px;
-  margin:0;
+  font-size:32px;
+  margin:0.5;
 }
 
 .brand .sub{
@@ -63,6 +64,16 @@ hr.sep{
   color:var(--fg-dim);
 }
 
+.prompt::after{
+  content: " █";
+  animation: blink 1.2s infinite;
+}
+
+@keyframes blink{
+  0%,50%,100%{opacity:1;}
+  25%,75%{opacity:0;}
+}
+
 .list{
   margin-top:14px;
 }
@@ -87,18 +98,18 @@ hr.sep{
 
 pre.terminal{
   margin-top:14px;
-  padding:14px 16px;
+  padding:20px 22px;
   border:1px solid rgba(79,163,255,0.18);
   background:rgba(0,0,0,0.18);
 
-  /* ✅ lectura cómoda */
-  white-space: pre-wrap;      /* respeta saltos, pero envuelve líneas */
-  overflow-wrap: anywhere;    /* rompe palabras largas si hace falta */
-  word-break: break-word;     /* fallback */
-  overflow-x: hidden;         /* elimina scroll horizontal */
+  
+  white-space: pre-wrap;      
+  overflow-wrap: anywhere;    
+  word-break: break-word;     
+  overflow-x: hidden;         
 }
 
 .small{
-  font-size:13px;
+  font-size:16px;
   color:var(--fg-faint);
 }
