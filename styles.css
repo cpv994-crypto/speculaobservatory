@@ -1,9 +1,9 @@
 :root{
   --bg:#050914;
-  --fg:#4FA3FF;
-  --fg-dim:rgba(79,163,255,0.88);
-  --fg-faint:rgba(79,163,255,0.65);
-  --maxw:980px;
+  --fg:#72B4FF;
+  --fg-dim:rgba(114,180,255,0.82);
+  --fg-faint:rgba(114,180,255,0.60);
+  --maxw:1100px;
 }
 
 *{ box-sizing:border-box; }
