@@ -19,7 +19,7 @@ body{
 
 .container{
   padding:56px;
-  max-width:var(--maxw);
+  max-width:900px;
 }
 
 .topline{
