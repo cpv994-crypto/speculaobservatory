@@ -138,6 +138,13 @@ pre.terminal{
   opacity: 0.6;
 }
 
+.copyright{
+  margin-top: calc(var(--rhythm) * 2);
+  color: var(--fg-dim);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
 /* =========================
    Mobile (<=820px)
    ========================= */
