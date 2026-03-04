@@ -111,7 +111,7 @@ pre.terminal{
 
   body { padding: 18px; }
 
-  .nav { display: none !important; }
+  body:not(.home) .nav { display: none !important; }
 
   .brand { font-size: 34px; line-height: 1.05; }
   .subtitle { font-size: 14px; line-height: 1.35; }
