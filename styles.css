@@ -105,66 +105,82 @@ pre.terminal{
 }
 
 /* =========================
-   Mobile / small screens
+   Mobile: minimal nav + no frames
    ========================= */
 @media (max-width: 820px) {
 
-  :root{
-    --pad: 18px;
+  body { padding: 18px; }
+
+  .nav { display: none !important; }
+
+  .brand { font-size: 34px; line-height: 1.05; }
+  .subtitle { font-size: 14px; line-height: 1.35; }
+
+  body.home .home-links {
+    display: block;
+    margin-top: 18px;
+  }
+  body.home .home-links a {
+    display: block;
+    margin: 10px 0;
   }
 
-  body{
-    padding: var(--pad);
+  body.home .block,
+  body.home .latest,
+  body.home .prompt,
+  body.home .small {
+    display: none !important;
   }
 
-  .top{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
+  .block {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: transparent !important;
   }
 
-  .nav{
-    width: 100%;
-    text-align: left;
-  }
-
-  .nav a{
-    display: inline-block;
-    margin-right: 14px;
-    margin-left: 0;
-    margin-bottom: 8px;
-  }
-
-  .brand{
-    font-size: 42px;
-    line-height: 1.05;
-  }
-
-  .subtitle{
-    font-size: 16px;
-    line-height: 1.35;
-  }
-
-  .content{
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .block{
-    width: 100%;
-    max-width: 100%;
-    padding: 14px;
-  }
-
-  pre, code, .mono{
-    white-space: pre-wrap;     
-    word-break: break-word;     
-    overflow-x: hidden;         
-  }
-
-  a{
+  pre, code, .mono {
+    white-space: pre-wrap;
     word-break: break-word;
+    overflow-x: hidden;
+  }
+
+  .back-home {
+    display: block;
+    margin-top: 24px;
+  }
+}
+
+/* =========================
+   HOME mobile: index view
+   ========================= */
+
+@media (max-width: 820px){
+
+  body.home .container > *{
+    display:none;
+  }
+
+  body.home .container .topline{
+    display:block;
+  }
+
+  body.home .container .topline .brand{
+    display:none;
+  }
+
+  body.home .container .topline .nav{
+    display:block;
+    text-align:left;
+  }
+
+  body.home .container .topline .nav a{
+    display:block;
+    margin:12px 0;
+  }
+
+  body.home{
+    padding:18px;
   }
 
 }
