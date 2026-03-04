@@ -137,11 +137,20 @@ pre.terminal{
   }
 
   pre.terminal{
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-top: 16px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-x: hidden;
     font-size: 15px;
     line-height: 1.6;
   }
 
-  /* back link visible everywhere */
+
+/* back link visible everywhere */
   .back-home{
     display: block;
     margin-top: 24px;
