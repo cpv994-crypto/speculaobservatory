@@ -1,1 +1,11 @@
+# local tooling / cloudflare
 .wrangler/
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# OS/editor
+.DS_Store
+.vscode/
